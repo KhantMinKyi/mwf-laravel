@@ -1,7 +1,7 @@
             <section id="our-team" class="ts-block">
                 <div class="container">
                     <div class="ts-title">
-                        <h2>Executive Committee</h2>
+                        <h2>{{ __('home.executive_committees') }}</h2>
                     </div>
                     <!--end ts-title-->
                     <div class="row">

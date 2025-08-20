@@ -4,7 +4,7 @@
                 <div class="col-sm-6">
                     <div class="ts-block pr-3">
                         <div class="ts-title">
-                            <h2>About Us</h2>
+                            <h2>{{ __('home.about_us') }}</h2>
                         </div>
                         <!--end ts-title-->
                         <p>
@@ -15,8 +15,7 @@
                             <a href="#collapseOne"
                                 class="list-group-item list-group-item-action border-top-0 pl-0 font-weight-bold bg-transparent"
                                 data-toggle="collapse" role="button" aria-expanded="false"
-                                aria-controls="collapseOne">Our
-                                Mission</a>
+                                aria-controls="collapseOne">{{ __('home.our_mission') }}</a>
                             <div class="collapse" id="collapseOne">
                                 <p class="pt-3 small">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -28,7 +27,7 @@
                             <a href="#collapseTwo"
                                 class="list-group-item list-group-item-action pl-0 font-weight-bold bg-transparent"
                                 data-toggle="collapse" role="button" aria-expanded="false"
-                                aria-controls="collapseTwo">Our Vision</a>
+                                aria-controls="collapseTwo">{{ __('home.our_vision') }}</a>
                             <div class="collapse" id="collapseTwo">
                                 <p class="pt-3 small">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -40,7 +39,7 @@
                             <a href="#collapseThree"
                                 class="list-group-item list-group-item-action pl-0 font-weight-bold bg-transparent"
                                 data-toggle="collapse" role="button" aria-expanded="false"
-                                aria-controls="collapseThree">Our Philosophy</a>
+                                aria-controls="collapseThree">{{ __('home.our_philosophy') }}</a>
                             <div class="collapse" id="collapseThree">
                                 <p class="pt-3 small">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -50,8 +49,9 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary mr-3 my-2">Contact Us</a>
-                        <a href="#" class="btn btn-outline-dark ts-btn-border-muted my-2">More Information</a>
+                        <a href="#" class="btn btn-primary mr-3 my-2">{{ __('home.contact_us') }}</a>
+                        <a href="#"
+                            class="btn btn-outline-dark ts-btn-border-muted my-2">{{ __('home.more_information') }}</a>
                     </div>
                 </div>
                 <!--end col-md-6-->
