@@ -7,11 +7,11 @@
     <meta name="author" content="ThemeStarz">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/font-awesome/css/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <title> Myanmar Wrestling Federation</title>
     {{-- @vite('resources/css/app.css') --}}
 </head>
@@ -27,7 +27,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top ts-separate-bg-element" data-bg-color="#141a3a">
                 <div class="container">
                     <a class="navbar-brand" href="#page-top">
-                        <img src="/img/mwf_logo.png" alt="" class="w-50">
+                        <img src="{{ asset('/img/mwf_logo.png') }}" alt="" class="w-50">
                     </a>
                     <!--end navbar-brand-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -38,10 +38,10 @@
                     <!--end navbar-toggler-->
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link active ts-scroll" href="#page-top">Home <span
+                            <a class="nav-item nav-link active ts-scroll" href="{{ route('home') }}">Home <span
                                     class="sr-only">(current)</span></a>
                             <a class="nav-item nav-link ts-scroll" href="#how-it-works">How It Works</a>
-                            <a class="nav-item nav-link ts-scroll" href="#about-us">About Us</a>
+                            <a class="nav-item nav-link ts-scroll" href="{{ route('guest.about_us') }}">About Us</a>
                             <a class="nav-item nav-link ts-scroll" href="#successful-stories">Cases</a>
                             <a class="nav-item nav-link ts-scroll" href="#pricing">Pricing</a>
                             <a class="nav-item nav-link ts-scroll" href="#our-team">Team</a>
@@ -62,7 +62,9 @@
             <div class="container align-self-center align-items-center">
                 <div class="row align-items-center">
                     <div class="col-sm-7 col-md-7 d-none d-sm-block">
-                        <h1 data-animate="ts-fadeInUp">Myanmar Wrestling Federation</h1>
+                        <h1 data-animate="ts-fadeInUp">
+                            <h1>{{ __('messages.welcome') }}</h1>
+                        </h1>
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
                             <p class="w-75 text-white mb-5 ts-opacity__50">Morbi et nisl a sapien malesuada scelerisque.
                                 Suspendisse tempor turpis mattis</p>
@@ -223,18 +225,18 @@
     </div>
     <!--end page-->
 
-    <script src="assets/js/custom.hero.js"></script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isInViewport.jquery.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/scrolla.jquery.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{{ asset('assets/js/custom.hero.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/js/isInViewport.jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/js/scrolla.jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-validate.bootstrap-tooltip.min.js') }}"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 </body>
 

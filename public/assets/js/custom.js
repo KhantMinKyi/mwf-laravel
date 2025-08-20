@@ -348,7 +348,8 @@ $(document).ready(function($) {
 // On SCROLL actions
 
     $(window).on("scroll", function(){
-        if ( $(window).scrollTop() >= $(window).height() ) {
+        // if ( $(window).scrollTop() >= $(window).height() ) {
+        if ( $(window).scrollTop() >= 50 ) {
             $(".navbar").addClass("in");
         }
         else {
