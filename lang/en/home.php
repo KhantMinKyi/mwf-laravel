@@ -13,6 +13,7 @@ return [
     'our_philosophy'                => 'Our Philosophy',
     'contact_us'                    => 'Contact Us',
     'more_information'              => 'More Information',
+    'our_history'                   => 'Our History',
 
 
     // Committees

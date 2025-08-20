@@ -3,7 +3,7 @@ return [
 
     // navbar 
     'home'              => 'ပင်မစာမျက်နှာ',
-    'about_us'          => 'ငါတို့အကြောင်း',
+    'about_us'          => 'ကျွန်ုပ်တို့၏အကြောင်း',
     'committee'         => 'ကော်မတီ',
     'news'              => 'သတင်း',
     'language'          => 'ဘာသာစကား',
@@ -23,5 +23,5 @@ return [
     'facebook'          => 'Facebook',
     'your_name'         => 'သင့်နာမည်',
     'your_email'        => 'သင်၏အီးမေးလ်',
-    'your_message'      => 'မင်းရဲ့သတင်းစကား ',
+    'your_message'      => 'သင်၏သတင်းစကား ',
 ];

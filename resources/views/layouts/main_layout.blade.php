@@ -16,7 +16,7 @@
     {{-- @vite('resources/css/app.css') --}}
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body>
     <div class="ts-page-wrapper" id="page-top">
 
         <!--*********************************************************************************************************-->
@@ -26,7 +26,7 @@
             <!--NAVIGATION ******************************************************************************************-->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top ts-separate-bg-element" data-bg-color="#141a3a">
                 <div class="container">
-                    <a class="navbar-brand" href="#page-top">
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="{{ asset('/img/mwf_logo.png') }}" alt="" class="w-50">
                     </a>
                     <!--end navbar-brand-->
@@ -38,18 +38,18 @@
                     <!--end navbar-toggler-->
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link active ts-scroll"
-                                href="{{ route('home') }}">{{ __('layout.home') }} <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link  ts-scroll active"
+                                href="{{ route('home') }}">{{ __('layout.home') }}
+                                <span class="sr-only">(current)</span></a>
                             {{-- <a class="nav-item nav-link ts-scroll" href="#how-it-works">How It Works</a> --}}
-                            <a class="nav-item nav-link ts-scroll"
+                            <a class="nav-item nav-link ts-scroll "
                                 href="{{ route('guest.about_us') }}">{{ __('layout.about_us') }} </a>
-                            <a class="nav-item nav-link ts-scroll" href="#successful-stories">{{ __('layout.news') }}
+                            <a class="nav-item nav-link ts-scroll" href="#">{{ __('layout.news') }}
                             </a>
                             {{-- <a class="nav-item nav-link ts-scroll" href="#pricing">Pricing</a> --}}
-                            <a class="nav-item nav-link ts-scroll" href="#our-team">{{ __('layout.committee') }} </a>
+                            <a class="nav-item nav-link ts-scroll" href="#">{{ __('layout.committee') }} </a>
                             <a class="nav-item nav-link ts-scroll mr-2"
-                                href="#form-contact">{{ __('layout.contact_us') }}</a>
+                                href="#">{{ __('layout.contact_us') }}</a>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -150,7 +150,6 @@
         @yield('content')
         <footer id="ts-footer">
 
-            {{-- <div class="map ts-height__400px" id="map"></div> --}}
 
             <section id="contact" class="ts-separate-bg-element" data-bg-image="assets/img/bg-hand-mobile.jpg"
                 data-bg-image-opacity=".1" data-bg-color="#12264f">

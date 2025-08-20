@@ -8,12 +8,13 @@ return [
 
 
     // About Us
-    'about_us'          => 'ငါတို့အကြောင်း',
+    'about_us'          => 'ကျွန်ုပ်တို့၏အကြောင်း',
     'our_mission'       => 'ကျွန်ုပ်တို့၏မစ်ရှင်',
     'our_vision'        => 'ကျွန်ုပ်တို့၏အမြင်',
     'our_philosophy'    => 'ကျွန်ုပ်တို့၏ဒဿန',
     'contact_us'        => 'ဆက်သွယ်ရန်',
     'more_information'  => 'နောက်ထပ်အချက်အလက်များ',
+    'our_history'       => 'ကျွန်ုပ်တို့၏သမိုင်း',
 
     // Committees
 
