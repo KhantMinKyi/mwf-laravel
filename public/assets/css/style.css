@@ -1571,7 +1571,14 @@ body.has-loading-screen.loading-done:after {
 .navbar .ts-background {
     transition: 1s ease;
 }
-
+.dropdown-menu{
+    background-color: #141a3a;
+}
+.dropdown-item{
+    color:white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 [class*="navbar-expand"] .navbar-nav .nav-link {
     padding-top: .3125rem;
     padding-bottom: .3125rem;

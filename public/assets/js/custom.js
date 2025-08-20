@@ -22,9 +22,15 @@ $(document).ready(function($) {
         });
     });
 
-	$('.navbar-nav .nav-link').on('click', function(){
-		$('.navbar-collapse').collapse('hide');
-	});
+	// $('.navbar-nav .nav-link').on('click', function(){
+	// 	$('.navbar-collapse').collapse('hide');
+	// });
+    $(document).on('click', function(e) {
+    // if the click is NOT inside the navbar
+    if (!$(e.target).closest('.navbar').length) {
+        $('.navbar-collapse').collapse('hide');
+    }
+});
 
     $(".ts-img-into-bg").each(function() {
         $(this).css("background-image", "url("+ $(this).find("img").attr("src") +")" );

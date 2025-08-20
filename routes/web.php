@@ -8,9 +8,9 @@ Route::get('/', function () {
 include __DIR__ . '/route_group/guest/general_route.php';
 
 
-Route::get('lang/{locale}', function ($locale) {
+Route::get('locale/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'mm'])) {
         session(['locale' => $locale]);
     }
     return back();
-});
+})->name('locale.set');

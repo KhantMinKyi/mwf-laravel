@@ -38,16 +38,34 @@
                     <!--end navbar-toggler-->
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link active ts-scroll" href="{{ route('home') }}">Home <span
+                            <a class="nav-item nav-link active ts-scroll"
+                                href="{{ route('home') }}">{{ __('layout.home') }} <span
                                     class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link ts-scroll" href="#how-it-works">How It Works</a>
-                            <a class="nav-item nav-link ts-scroll" href="{{ route('guest.about_us') }}">About Us</a>
-                            <a class="nav-item nav-link ts-scroll" href="#successful-stories">Cases</a>
-                            <a class="nav-item nav-link ts-scroll" href="#pricing">Pricing</a>
-                            <a class="nav-item nav-link ts-scroll" href="#our-team">Team</a>
-                            <a class="nav-item nav-link ts-scroll mr-2" href="#form-contact">Contact</a>
-                            <a class="ts-scroll btn btn-primary btn-sm m-1 px-3 ts-width__auto" href="#form-contact">Get
-                                a Quote</a>
+                            {{-- <a class="nav-item nav-link ts-scroll" href="#how-it-works">How It Works</a> --}}
+                            <a class="nav-item nav-link ts-scroll"
+                                href="{{ route('guest.about_us') }}">{{ __('layout.about_us') }} </a>
+                            <a class="nav-item nav-link ts-scroll" href="#successful-stories">{{ __('layout.news') }}
+                            </a>
+                            {{-- <a class="nav-item nav-link ts-scroll" href="#pricing">Pricing</a> --}}
+                            <a class="nav-item nav-link ts-scroll" href="#our-team">{{ __('layout.committee') }} </a>
+                            <a class="nav-item nav-link ts-scroll mr-2"
+                                href="#form-contact">{{ __('layout.contact_us') }}</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{ __('layout.language') }}
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="{{ route('locale.set', 'en') }}"> <img
+                                            src="{{ asset('/img/english.png') }}" alt="" class="md:w-25"
+                                            style="width: 24px;"></a>
+                                    <a class="dropdown-item" href="{{ route('locale.set', 'mm') }}"> <img
+                                            src="{{ asset('/img/myanmar.png') }}" alt="" class="md:w-25"
+                                            style="width: 24px;"></a>
+                                </div>
+                            </li>
+                            <a class="ts-scroll btn btn-primary btn-sm m-1 px-3 ts-width__auto"
+                                href="#form-contact">{{ __('layout.contact_us') }}</a>
                         </div>
                         <!--end navbar-nav-->
                     </div>
@@ -63,7 +81,8 @@
                 <div class="row align-items-center">
                     <div class="col-sm-7 col-md-7 d-none d-sm-block">
                         <h1 data-animate="ts-fadeInUp">
-                            <h1>{{ __('messages.welcome') }}</h1>
+
+                            <h1>{{ __('layout.website_name') }}</h1>
                         </h1>
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
                             <p class="w-75 text-white mb-5 ts-opacity__50">Morbi et nisl a sapien malesuada scelerisque.
@@ -71,30 +90,29 @@
                         </div>
                         <a href="#how-it-works" class="btn btn-outline-light btn-lg ts-scroll mr-4"
                             data-animate="ts-fadeInUp" data-delay=".2s">
-                            Learn More
+                            {{ __('layout.learn_more') }}
                             <i class="fa fa-arrow-right small ml-3 ts-opacity__50"></i>
                         </a>
                     </div>
                     <div class="col-sm-5 offset-lg-1 col-md-4">
                         <form class="ts-form p-4 ts-border-radius__md text-white" data-php-path="assets/php/email.php"
                             data-bg-color="rgba(255,255,255,.2)" data-animate="ts-fadeInUp" data-delay=".2s">
-                            <h3>Contact Us</h3>
-                            <p class="text-white d-none d-lg-block">Vivamus fermentum magna non faucibus dignissim. Sed
-                                a venenatis </p>
+                            <h3>{{ __('layout.contact_us') }}</h3>
+                            <p class="text-white d-none d-lg-block">{{ __('layout.contact_sub_title') }}</p>
 
                             <div class="form-group">
                                 <input type="text" class="form-control" id="hero-name" name="name"
-                                    placeholder="Your Name" required>
+                                    placeholder="{{ __('layout.name') }}" required>
                             </div>
                             <!--end form-group -->
                             <div class="form-group">
                                 <input type="email" class="form-control" id="hero-email" name="email"
-                                    placeholder="Your Email" required>
+                                    placeholder="{{ __('layout.email') }}" required>
                             </div>
                             <!--end form-group -->
                             <div class="form-group">
                                 <input type="test" class="form-control" id="hero-message" name="message"
-                                    placeholder="message" required>
+                                    placeholder="{{ __('layout.message') }}" required>
                             </div>
                             <!--end form-group -->
                             {{-- <div class="form-group">
@@ -106,7 +124,7 @@
                                 </select>
                             </div> --}}
                             <!--end form-group -->
-                            <button type="submit" class="btn btn-primary w-100">Get a Quote</button>
+                            <button type="submit" class="btn btn-primary w-100">{{ __('layout.send') }}</button>
                         </form>
                         <!--end ts-form-->
                     </div>
@@ -140,7 +158,7 @@
                     <div class="ts-box mb-0 p-5 ts-mt__n-10" data-animate="ts-fadeInUp">
                         <div class="row">
                             <div class="col-md-4">
-                                <h3>Contact Us</h3>
+                                <h3>{{ __('layout.contact_us') }}</h3>
                                 <address>
                                     <figure>
                                         2590 Rocky Road
@@ -148,14 +166,14 @@
                                     </figure>
                                     <br>
                                     <figure>
-                                        <div class="font-weight-bold">Email:</div>
+                                        <div class="font-weight-bold">{{ __('layout.email') }}</div>
                                         <a href="#">office@example.com</a>
                                     </figure>
                                     <figure>
-                                        <div class="font-weight-bold">Phone:</div>
+                                        <div class="font-weight-bold">{{ __('layout.phone') }}</div>
                                         +1 215-606-0391
                                     </figure>
-                                    <div class="font-weight-bold">Skype:</div>
+                                    <div class="font-weight-bold">{{ __('layout.facebook') }}:</div>
                                     fin.win
                                 </address>
                                 <!--end address-->
@@ -169,18 +187,21 @@
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label for="form-contact-name">Your Name *</label>
+                                                <label for="form-contact-name">{{ __('layout.your_name') }} *</label>
                                                 <input type="text" class="form-control" id="form-contact-name"
-                                                    name="name" placeholder="Your Name" required>
+                                                    name="name" placeholder="{{ __('layout.your_name') }}"
+                                                    required>
                                             </div>
                                             <!--end form-group -->
                                         </div>
                                         <!--end col-md-6 col-sm-6 -->
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label for="form-contact-email">Your Email *</label>
+                                                <label for="form-contact-email">{{ __('layout.your_email') }}
+                                                    *</label>
                                                 <input type="email" class="form-control" id="form-contact-email"
-                                                    name="email" placeholder="Your Email" required>
+                                                    name="email" placeholder="{{ __('layout.your_email') }}"
+                                                    required>
                                             </div>
                                             <!--end form-group -->
                                         </div>
@@ -190,9 +211,10 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="form-contact-message">Your Message *</label>
-                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Your Message"
-                                                    required></textarea>
+                                                <label for="form-contact-message">{{ __('layout.your_message') }}
+                                                    *</label>
+                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message"
+                                                    placeholder="{{ __('layout.your_message') }}" required></textarea>
                                             </div>
                                             <!--end form-group -->
                                         </div>
@@ -201,7 +223,7 @@
                                     <!--end row -->
                                     <div class="form-group clearfix">
                                         <button type="submit" class="btn btn-primary float-right"
-                                            id="form-contact-submit">Send a Message</button>
+                                            id="form-contact-submit">{{ __('layout.send') }}</button>
                                     </div>
                                     <!--end form-group -->
                                     <div class="form-contact-status"></div>
