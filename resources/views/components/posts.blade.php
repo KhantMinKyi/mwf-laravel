@@ -1,7 +1,7 @@
             <section id="successful-stories" class="ts-block pb-5 mb-4">
                 <div class="container">
                     <div class="ts-title text-center">
-                        <h2>Our News & Posts</h2>
+                        <h2>{{ __('home.news_and_posts') }}</h2>
                     </div>
                     <!--end ts-title-->
                     <div class="row">
@@ -44,7 +44,8 @@
                     </div>
                     <!--end row-->
                     <div class="my-5 text-center">
-                        <a href="#" class="btn btn-outline-primary border-0" data-bg-color="#ebf1fe">See More</a>
+                        <a href="#" class="btn btn-outline-primary border-0"
+                            data-bg-color="#ebf1fe">{{ __('home.see_more') }}</a>
                     </div>
                 </div>
                 <!--end container-->
