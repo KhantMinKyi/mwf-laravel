@@ -1,12 +1,21 @@
 <?php
 
+use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('guest.home');
-})->name('home');
+// Guest Routes
 include __DIR__ . '/route_group/guest/general_route.php';
+include __DIR__ . '/route_group/guest/auth.php';
 
+// Admin Routes
+Route::group(['middleware' => ['auth', IsAdmin::class], 'prefix' => '/administration-panel/admin'], function () {
+    Route::get('dashborad', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+});
+
+
+// Global Routes
 Route::get('/login_form', function () {
     return view('login');
 })->name('login');
