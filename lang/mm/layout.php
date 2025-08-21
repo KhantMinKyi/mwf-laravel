@@ -24,4 +24,5 @@ return [
     'your_name'         => 'သင့်နာမည်',
     'your_email'        => 'သင်၏အီးမေးလ်',
     'your_message'      => 'သင်၏သတင်းစကား ',
+    'contact_form'      => 'ဆက်သွယ်ရန်ပုံစံ ',
 ];

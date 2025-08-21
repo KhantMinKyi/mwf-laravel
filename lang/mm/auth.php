@@ -17,11 +17,12 @@ return [
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
-    'login_page' => 'Login Page',
-    'login_sub_title' => 'Please login to your account',
-    'username' => 'Username',
-    'password' => 'Password',
-    'login' => 'Log In',
-    'forgot_password' => 'Forgot password?',
+
+    'login_page' => 'သင့်အကောင့်သို့ ဝင်ရောက်ရန် စာမျက်နှာ',
+    'login_sub_title' => 'သင့်အကောင့်သို့ ဝင်ရောက်ပါ။',
+    'username' => 'အသုံးပြုသူအမည်',
+    'password' => 'စကားဝှက်',
+    'login' => 'လော့ဂ်အင်',
+    'forgot_password' => 'စကားဝှက်မေ့နေပါသလား?',
 
 ];

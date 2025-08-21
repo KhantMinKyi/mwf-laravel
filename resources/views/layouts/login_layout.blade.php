@@ -85,48 +85,8 @@
                             <h1>{{ __('layout.website_name') }}</h1>
                         </h1>
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
-                            <p class="w-75 text-white mb-5 ts-opacity__50">Morbi et nisl a sapien malesuada scelerisque.
-                                Suspendisse tempor turpis mattis</p>
+                            <p class="w-75 text-white mb-5 ts-opacity__50">{{ __('auth.login_page') }}</p>
                         </div>
-                        <a href="#how-it-works" class="btn btn-outline-light btn-lg ts-scroll mr-4"
-                            data-animate="ts-fadeInUp" data-delay=".2s">
-                            {{ __('layout.learn_more') }}
-                            <i class="fa fa-arrow-right small ml-3 ts-opacity__50"></i>
-                        </a>
-                    </div>
-                    <div class="col-sm-5 offset-lg-1 col-md-4">
-                        <form class="ts-form p-4 ts-border-radius__md text-white" data-php-path="assets/php/email.php"
-                            data-bg-color="rgba(255,255,255,.2)" data-animate="ts-fadeInUp" data-delay=".2s">
-                            <h3>{{ __('layout.contact_us') }}</h3>
-                            <p class="text-white d-none d-lg-block">{{ __('layout.contact_sub_title') }}</p>
-
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="hero-name" name="name"
-                                    placeholder="{{ __('layout.name') }}" required>
-                            </div>
-                            <!--end form-group -->
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="hero-email" name="email"
-                                    placeholder="{{ __('layout.email') }}" required>
-                            </div>
-                            <!--end form-group -->
-                            <div class="form-group">
-                                <input type="test" class="form-control" id="hero-message" name="message"
-                                    placeholder="{{ __('layout.message') }}" required>
-                            </div>
-                            <!--end form-group -->
-                            {{-- <div class="form-group">
-                                <select class="custom-select form-control" required>
-                                    <option selected>Select Interest</option>
-                                    <option value="1">Business Grow</option>
-                                    <option value="2">Brand Refresh</option>
-                                    <option value="3">Crypto Investments</option>
-                                </select>
-                            </div> --}}
-                            <!--end form-group -->
-                            <button type="submit" class="btn btn-primary w-100">{{ __('layout.send') }}</button>
-                        </form>
-                        <!--end ts-form-->
                     </div>
                 </div>
             </div>
