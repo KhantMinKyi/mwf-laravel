@@ -8,6 +8,8 @@ return [
     'news'              => 'သတင်း',
     'language'          => 'ဘာသာစကား',
     'contact_us'        => 'ဆက်သွယ်ရန်',
+    'myanmar'           => 'မြန်မာစာ',
+    'english'           => 'အင်္ဂလိပ်စာ',
 
     // banner
     'website_name'      => 'မြန်မာနိုင်ငံနပန်းအဖွဲ့ချုပ်',

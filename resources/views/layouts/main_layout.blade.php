@@ -38,11 +38,11 @@
                     <!--end navbar-toggler-->
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link  ts-scroll active"
+                            <a class="nav-item nav-link  ts-scroll {{ request()->routeIs('home') ? 'active' : '' }}"
                                 href="{{ route('home') }}">{{ __('layout.home') }}
                                 <span class="sr-only">(current)</span></a>
                             {{-- <a class="nav-item nav-link ts-scroll" href="#how-it-works">How It Works</a> --}}
-                            <a class="nav-item nav-link ts-scroll "
+                            <a class="nav-item nav-link ts-scroll {{ request()->routeIs('guest.about_us') ? 'active' : '' }} "
                                 href="{{ route('guest.about_us') }}">{{ __('layout.about_us') }} </a>
                             <a class="nav-item nav-link ts-scroll" href="#">{{ __('layout.news') }}
                             </a>
@@ -54,18 +54,29 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ __('layout.language') }}
+                                    @if (session('locale') == 'en')
+                                        <img src="{{ asset('/img/english.png') }}" alt="" class="md:w-25"
+                                            style="width: 24px;">
+                                    @endif
+                                    @if (session('locale') == 'mm')
+                                        <img src="{{ asset('/img/myanmar.png') }}" alt="" class="md:w-25"
+                                            style="width: 24px;">
+                                    @endif
+
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="{{ route('locale.set', 'en') }}"> <img
                                             src="{{ asset('/img/english.png') }}" alt="" class="md:w-25"
-                                            style="width: 24px;"></a>
+                                            style="width: 24px;"><span
+                                            class="pl-2">{{ __('layout.english') }}</span></a>
                                     <a class="dropdown-item" href="{{ route('locale.set', 'mm') }}"> <img
                                             src="{{ asset('/img/myanmar.png') }}" alt="" class="md:w-25"
-                                            style="width: 24px;"></a>
+                                            style="width: 24px;"><span
+                                            class="pl-2">{{ __('layout.myanmar') }}</span></a>
                                 </div>
                             </li>
                             <a class="ts-scroll btn btn-primary btn-sm m-1 px-3 ts-width__auto"
-                                href="#form-contact">{{ __('layout.contact_us') }}</a>
+                                href="{{ route('login') }}">{{ __('auth.login') }}</a>
                         </div>
                         <!--end navbar-nav-->
                     </div>

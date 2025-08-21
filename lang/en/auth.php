@@ -22,6 +22,7 @@ return [
     'username' => 'Username',
     'password' => 'Password',
     'login' => 'Log In',
+    'logout' => 'Logout',
     'forgot_password' => 'Forgot password?',
 
 ];
