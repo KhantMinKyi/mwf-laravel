@@ -64,8 +64,8 @@
             data-bg-parallax-speed="3">
             <div class="owl-carousel w-50 ts-push-left__100 h-100 ts-parallax-element1" data-owl-loop="1"
                 data-owl-nav-container="#carousel-external-control">
-                <div class="ts-background-image" data-bg-image="{{ asset('/img/banner_2.png') }}"></div>
-                <div class="ts-background-image" data-bg-image="{{ asset('/img/banner.jpg') }}"></div>
+                <div class="ts-background-image" data-bg-image="{{ asset('/img/banner_2.jpg') }}"></div>
+                <div class="ts-background-image" data-bg-image="{{ asset('/img/banner_4.jpg') }}"></div>
             </div>
             <!--end owl-carousel-->
         </div>

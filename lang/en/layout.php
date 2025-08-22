@@ -8,6 +8,9 @@ return [
     'news'              => 'News',
     'language'          => 'Language',
     'contact_us'        => 'Contact Us',
+    'myanmar'           => 'Myanmar',
+    'english'           => 'English',
+
 
     // banner
     'website_name'      => 'Myanmar Wrestling Federation',
