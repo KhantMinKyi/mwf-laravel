@@ -1,5 +1,7 @@
 @extends('layouts.main_layout')
-
+@section('banner_title')
+    <h1>{{ __('layout.website_name') }}</h1>
+@endsection
 @section('content')
     {{-- Moto Section --}}
     <section class="ts-block ts-separate-bg-element ts-background-repeat text-center" data-bg-image-opacity=".1"

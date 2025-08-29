@@ -44,12 +44,14 @@
                             {{-- <a class="nav-item nav-link ts-scroll" href="#how-it-works">How It Works</a> --}}
                             <a class="nav-item nav-link ts-scroll {{ request()->routeIs('guest.about_us') ? 'active' : '' }} "
                                 href="{{ route('guest.about_us') }}">{{ __('layout.about_us') }} </a>
-                            <a class="nav-item nav-link ts-scroll" href="#">{{ __('layout.news') }}
+                            <a class="nav-item nav-link ts-scroll {{ request()->routeIs('guest.news') ? 'active' : '' }} "
+                                href="{{ route('guest.news') }}">{{ __('layout.news') }}
                             </a>
                             {{-- <a class="nav-item nav-link ts-scroll" href="#pricing">Pricing</a> --}}
-                            <a class="nav-item nav-link ts-scroll" href="#">{{ __('layout.committee') }} </a>
-                            <a class="nav-item nav-link ts-scroll mr-2"
-                                href="#">{{ __('layout.contact_us') }}</a>
+                            <a class="nav-item nav-link ts-scroll {{ request()->routeIs('guest.committee') ? 'active' : '' }}"
+                                href="{{ route('guest.committee') }}">{{ __('layout.committee') }} </a>
+                            {{-- <a class="nav-item nav-link ts-scroll mr-2"
+                                href="#">{{ __('layout.contact_us') }}</a> --}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -62,7 +64,10 @@
                                         <img src="{{ asset('/img/myanmar.png') }}" alt="" class="md:w-25"
                                             style="width: 24px;">
                                     @endif
-
+                                    @if (!session('locale'))
+                                        <img src="{{ asset('/img/english.png') }}" alt="" class="md:w-25"
+                                            style="width: 24px;">
+                                    @endif
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="{{ route('locale.set', 'en') }}"> <img
@@ -93,7 +98,8 @@
                     <div class="col-sm-7 col-md-7 d-none d-sm-block">
                         <h1 data-animate="ts-fadeInUp">
 
-                            <h1>{{ __('layout.website_name') }}</h1>
+                            @yield('banner_title')
+
                         </h1>
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
                             <p class="w-75 text-white mb-5 ts-opacity__50">Morbi et nisl a sapien malesuada scelerisque.

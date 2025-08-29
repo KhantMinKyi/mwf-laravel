@@ -1,6 +1,8 @@
 @extends('layouts.main_layout')
 
-
+@section('banner_title')
+    <h1>{{ __('home.about_us') }}</h1>
+@endsection
 @section('content')
     <div class="container">
         <div class="row">
