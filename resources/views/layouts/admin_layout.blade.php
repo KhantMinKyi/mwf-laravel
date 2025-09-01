@@ -25,6 +25,7 @@
 
     <!-- App css  (Mandatory in All Pages) -->
     <link href="{{ asset('admin/css/app.min.css') }}" rel="stylesheet" type="text/css">
+    @vite('resources/css/app.css')
 </head>
 
 <body>
@@ -38,7 +39,7 @@
             <div class="flex flex-col h-full">
                 <!-- Sidenav Logo -->
                 <div class="sticky top-0 flex h-topbar items-center justify-between px-6">
-                    <a href="index.html">
+                    <a href="{{ route('admin.dashboard') }}">
                         <img src="{{ asset('admin/images/logo-light.png') }}" alt="logo" class="flex h-8">
                     </a>
                 </div>
@@ -48,13 +49,13 @@
                     <ul class="admin-menu hs-accordion-group flex w-full flex-col gap-1">
                         <li class="menu-item">
                             <a class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
-                                href="index.html">
+                                href="{{ route('admin.dashboard') }}">
                                 <i class="i-tabler-layout-2 text-2xl"></i>
                                 DashBoard
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="starter-page.html"
+                            <a href="{{ route('admin.posts.index') }}"
                                 class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
                                 <i class="i-tabler-clipboard text-2xl"></i>
                                 <span class="menu-text">Posts & Events</span>
@@ -145,7 +146,7 @@
 
     <!-- Filtter Demo js -->
     <script src="{{ asset('admin/js/pages/gallery.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
