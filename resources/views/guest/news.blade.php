@@ -3,6 +3,12 @@
 @section('banner_title')
     <h1>{{ __('home.news_and_posts') }}</h1>
 @endsection
+
+@php
+    $locale = app()->getLocale();
+    $naming = $locale == 'en' ? '' : '_mm';
+@endphp
+{{-- @vite('resources/css/app.css') --}}
 @section('content')
     <section id="successful-stories" class="ts-block pb-5 mb-4">
         <div class="container">
@@ -11,47 +17,21 @@
             </div>
             <!--end ts-title-->
             <div class="row">
-                <div class="col-md-4">
-                    <div class="ts-story ts-separate-bg-element" data-animate="ts-fadeInUp" data-bg-color="rgba(0,0,0,.05)"
-                        data-bg-image="assets/img/img-bw-man-phone.jpg" data-bg-image-opacity=".1">
-                        <figure>10.05.2018</figure>
-                        <h3>Peters & Partners 50% Growth</h3>
-                        <p>Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor </p>
-                        <a href="#" class="btn btn-primary btn-sm">View More</a>
+                @foreach ($posts as $post)
+                    <div class="col-md-4">
+                        <div class="ts-story ts-separate-bg-element" data-animate="ts-fadeInUp" data-bg-color="rgba(0,0,0,.05)"
+                            data-bg-image="{{ asset($post->post_banner) }}" data-bg-image-opacity=".1">
+                            <figure>{{ $post->post_created_date }}</figure>
+                            {{-- <h3>{{ $post->post_title . $naming }}</h3> --}}
+                            <h3>{{ $post->{'post_title' . $naming} }}</h3>
+                            {{-- <p>{{ Str::words(strip_tags($post->{'post_body' . $naming}), 10) }} </p> --}}
+                            <a href="#" class="btn btn-primary btn-sm">{{ __('home.view_more') }}</a>
+                        </div>
+                        <!--end ts-story-->
                     </div>
-                    <!--end ts-story-->
-                </div>
-                <!--end col-md-4-->
-                <div class="col-md-4">
-                    <div class="ts-story ts-separate-bg-element" data-animate="ts-fadeInUp" data-delay="0.1s"
-                        data-bg-color="rgba(0,0,0,.05)" data-bg-image="assets/img/img-bw-food.jpg"
-                        data-bg-image-opacity=".1">
-                        <figure>23.04.2018</figure>
-                        <h3>Fishnet Restaurant Redesign</h3>
-                        <p>Donec et magna velit. Aenean volutpat consequat feugiat. Mauris</p>
-                        <a href="#" class="btn btn-primary btn-sm">View More</a>
-                    </div>
-                    <!--end ts-story-->
-                </div>
-                <!--end col-md-4-->
-                <div class="col-md-4">
-                    <div class="ts-story ts-separate-bg-element" data-animate="ts-fadeInUp" data-delay="0.2s"
-                        data-bg-color="rgba(0,0,0,.05)" data-bg-image="assets/img/img-bw-student-drawing.jpg"
-                        data-bg-image-opacity=".1">
-                        <figure>12.03.2018</figure>
-                        <h3>EyeSight Startup Successful Funding</h3>
-                        <p>Integer eleifend diam eu diam sollicitudin pharetra. Donec pulvinar</p>
-                        <a href="#" class="btn btn-primary btn-sm">View More</a>
-                    </div>
-                    <!--end ts-story-->
-                </div>
-                <!--end col-md-4-->
+                @endforeach
             </div>
-            <!--end row-->
-            <div class="my-5 text-center">
-                <a href="#" class="btn btn-outline-primary border-0"
-                    data-bg-color="#ebf1fe">{{ __('home.see_more') }}</a>
-            </div>
+            {{ $posts->links('pagination::bootstrap-4') }}
         </div>
         <!--end container-->
     </section>

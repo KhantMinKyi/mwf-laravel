@@ -17,6 +17,7 @@
 /public/hot
 /public/admin/libs
 /public/storage
+/public/img/post_data
 /storage/*.key
 /storage/pail
 /vendor

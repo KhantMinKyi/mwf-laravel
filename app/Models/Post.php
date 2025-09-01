@@ -17,6 +17,8 @@ class Post extends Model
         'post_body',
         'post_image',
         'post_is_active',
+        'post_title_mm',
+        'post_body_mm',
     ];
 
         public function created_user()

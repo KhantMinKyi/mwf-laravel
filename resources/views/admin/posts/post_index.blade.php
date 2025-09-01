@@ -69,9 +69,9 @@
                                     {{ $post->post_is_show_front == 0 ? 'No' : 'Yes' }}
                                 </td>
                                 <td class="items px-6 py-4">
-                                    <a href="#"
+                                    <a href="{{ route('admin.posts.edit', $post->id) }}"
                                         class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    <a href="#"
+                                    <a href="{{ route('admin.posts.archived_post', $post->id) }}?status=0"
                                         class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
                                 </td>
                             </tr>
@@ -87,7 +87,7 @@
     <!-- Main modal -->
     <div id="authentication-modal" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative p-4 w-full max-w-md max-h-full">
+        <div class="relative w-full max-w-4xl max-h-full">
             <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow-sm ">
                 <!-- Modal header -->
@@ -117,17 +117,35 @@
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 "
                                 placeholder="Post Banner" required />
                         </div>
-                        <div>
-                            <label for="post_title" class="block mb-2 text-sm font-medium text-gray-900 ">Title</label>
-                            <input type="text" name="post_title" id="post_title" placeholder="Enter Post Title"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 "
-                                required />
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label for="post_title" class="block mb-2 text-sm font-medium text-gray-900 ">Title</label>
+                                <input type="text" name="post_title" id="post_title" placeholder="Enter Post Title"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 "
+                                    required />
+                            </div>
+                            <div>
+                                <label for="post_title_mm"
+                                    class="block mb-2 text-sm font-medium text-gray-900 ">ခေါင်းစဉ်</label>
+                                <input type="text" name="post_title_mm" id="post_title_mm" placeholder="Enter Post Title"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 "
+                                    required />
+                            </div>
                         </div>
-                        <div>
-                            <label for="post_body" class="block mb-2 text-sm font-medium text-gray-900 ">Body</label>
-                            <textarea type="text" name="post_body" id="post_body" placeholder="Enter Post Body"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 "
-                                required> </textarea>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label for="post_body" class="block mb-2 text-sm font-medium text-gray-900 ">Body</label>
+                                <textarea type="text" name="post_body" id="post_body" placeholder="Enter Post Body"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 "
+                                    required> </textarea>
+                            </div>
+                            <div>
+                                <label for="post_body_mm"
+                                    class="block mb-2 text-sm font-medium text-gray-900 ">စာသား</label>
+                                <textarea type="text" name="post_body_mm" id="post_body_mm" placeholder="Enter Post Body"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 "
+                                    required> </textarea>
+                            </div>
                         </div>
                         <div>
                             <label for="post_title" class="block mb-2 text-sm font-medium text-gray-900 ">Images</label>

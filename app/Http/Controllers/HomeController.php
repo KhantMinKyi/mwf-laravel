@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,7 +14,8 @@ class HomeController extends Controller
     }
     public function getNewsPage()
     {
-        return view('guest.news');
+        $posts = Post::where('post_is_active',1)->paginate(6);
+        return view('guest.news',compact('posts'));
     }
     public function getCommitteePage()
     {

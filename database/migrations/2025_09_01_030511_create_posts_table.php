@@ -23,6 +23,8 @@ return new class extends Migration
             $table->longText('post_body');
             $table->longText('post_image')->nullable();
             $table->boolean('post_is_active')->default(1);
+            $table->longText('post_title_mm');
+            $table->longText('post_body_mm');
             $table->timestamps();
         });
     }

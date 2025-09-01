@@ -125,37 +125,8 @@
             <div class="col-sm-12">
                 <div class=" pr-3">
                     <!--end ts-title-->
-                    <p>
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
-                        Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                        Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
+                    <p class=" text-dark mt-2">
+                        {{ __('home.our_history_detail') }}
 
                     </p>
                 </div>

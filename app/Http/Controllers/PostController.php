@@ -38,6 +38,8 @@ class PostController extends Controller
             'post_banner' => 'required|file',
             'post_title' => 'required',
             'post_body' => 'required',
+            'post_title_mm' => 'required',
+            'post_body_mm' => 'required',
             'post_category' => 'required',
             'post_image' => 'nullable|array',
             'post_is_show_front' => 'nullable',
@@ -116,5 +118,9 @@ class PostController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function archivedPost(string $id)
+    {
+        dd($id);
     }
 }
