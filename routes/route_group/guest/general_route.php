@@ -9,6 +9,7 @@ Route::get('/', function () {
     return view('guest.home',compact('posts'));
 })->name('home');
 Route::group(['prefix' => '/guest'], function () {
+    Route::get('/news_detail/{id}', [HomeController::class, 'getNewsDetailPage'])->name('guest.news_detail');
     Route::get('/about_us', [HomeController::class, 'getAboutUsPage'])->name('guest.about_us');
     Route::get('/news', [HomeController::class, 'getNewsPage'])->name('guest.news');
     Route::get('/committee', [HomeController::class, 'getCommitteePage'])->name('guest.committee');

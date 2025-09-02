@@ -21,4 +21,9 @@ class HomeController extends Controller
     {
         return view('guest.committee');
     }
+    public function getNewsDetailPage($id)
+    {
+        $post = Post::find($id);
+        return view('partial_view.guest.news_detail',compact('post'));
+    }
 }
