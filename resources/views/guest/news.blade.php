@@ -19,8 +19,8 @@
             <div class="row">
                 @foreach ($posts as $post)
                     <div class="col-md-4">
-                        <div class="ts-story ts-separate-bg-element" data-animate="ts-fadeInUp" data-bg-color="rgba(0,0,0,.05)"
-                            data-bg-image="{{ asset($post->post_banner) }}" data-bg-image-opacity=".1">
+                        <div class="ts-story ts-separate-bg-element" data-animate="ts-fadeInUp" data-bg-color="rgba(0,0,0,.7)"
+                            data-bg-image="{{ asset($post->post_banner) }}" data-bg-image-opacity=".6">
                             <figure>{{ $post->post_created_date }}</figure>
                             {{-- <h3>{{ $post->post_title . $naming }}</h3> --}}
                             <h3>{{ $post->{'post_title' . $naming} }}</h3>
