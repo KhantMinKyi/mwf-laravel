@@ -25,7 +25,7 @@
                             {{-- <h3>{{ $post->post_title . $naming }}</h3> --}}
                             <h3>{{ $post->{'post_title' . $naming} }}</h3>
                             {{-- <p>{{ Str::words(strip_tags($post->{'post_body' . $naming}), 10) }} </p> --}}
-                            <a href="#" class="btn btn-primary btn-sm">{{ __('home.view_more') }}</a>
+                            <a href="{{ route('guest.news_detail', $post->id) }}" class="btn btn-primary btn-sm">{{ __('home.view_more') }}</a>
                         </div>
                         <!--end ts-story-->
                     </div>

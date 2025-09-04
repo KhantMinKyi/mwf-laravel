@@ -2,12 +2,12 @@
 <section id="our-life-sotry" class="ts-block ts-separate-bg-element ts-background-repeat" data-bg-image-opacity=".1"
     data-bg-image="{{ asset('assets/img/bg-pattern-dot.png') }}">
     <div class="text-center ts-title">
-        <h2>Our Life Story</h2>
+        <h2>{{__('about_us.activity_title')}}</h2>
     </div>
     <!--end ts-title-->
     <div class="ts-time-line__horizontal">
         <ul class="pt-5 owl-carousel" data-owl-items="99" data-owl-auto-width="1">
-            <li class="ts-time-line__item ts-time-line__milestone">
+            {{-- <li class="ts-time-line__item ts-time-line__milestone">
                 <div class="ts-box">
                     <h5>Company Founded</h5>
                 </div>
@@ -17,21 +17,25 @@
                     <h6>2016</h6>
                 </figure>
                 <!--end date-->
-            </li>
+            </li> --}}
 
             <li class="ts-time-line__item">
                 <div class="ts-box">
-                    <h5>Solution for slow money transfers</h5>
-                    <p>
-                        Phasellus in iaculis ante. Fusce odio justo, pulvinar sit amet nisl sed, lacinia laoreet
-                        augue. Integer eu ultrices lacus, at laoreet
-                    </p>
-                    <a href="#" class="btn btn-dark btn-sm">Read More</a>
+                    <h5>The 26th Southeast Asian Games</h5>
+                    <span>Venue: Palembang, Indonesia</span>
+                    <span>Date: (11.11.2011 to 18.11.2011)</span>
+                    {{-- <p> --}}
+                        <h6>
+                            Zaw Moe Aung - 84 kg, Bronze Medal / Zaw Min Aung - 60 kg, Bronze Medal
+                        </h6>
+
+                    {{-- </p> --}}
+                    {{-- <a href="#" class="btn btn-dark btn-sm">Read More</a> --}}
                 </div>
                 <!--end ts-box-->
                 <figure>
-                    <small>Mar</small>
-                    <h6>2017</h6>
+                    <small>Activities</small>
+                    <h6>2011 </h6>
                 </figure>
                 <!--end date-->
             </li>

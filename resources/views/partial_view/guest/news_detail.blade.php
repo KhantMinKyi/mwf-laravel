@@ -21,9 +21,9 @@
                 </p>
             </div>
             <!--end ts-title-->
-            <div class="row ">
+            <div class=" d-flex justify-content-center flex-wrap ">
                 @foreach ($photo_array as $photo)
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3  ">
                         <div class="card">
                             <div class="ts-card__image ts-img-into-bg">
                                 <img class="card-img-top" src="{{ asset($photo) }}" alt="Card image cap">
