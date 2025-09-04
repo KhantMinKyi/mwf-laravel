@@ -136,4 +136,6 @@
         </div>
         <!--end row-->
     </div>
+
+    @include('components.timeline')
 @endsection
