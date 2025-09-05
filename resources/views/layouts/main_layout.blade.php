@@ -102,8 +102,7 @@
 
                         </h1>
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
-                            <p class="w-75 text-white mb-5 ts-opacity__50">Morbi et nisl a sapien malesuada scelerisque.
-                                Suspendisse tempor turpis mattis</p>
+                            <p class="w-75 text-white mb-5 ts-opacity__50">{{ __('home.our_history_start_line') }}</p>
                         </div>
                         <a href="#how-it-works" class="btn btn-outline-light btn-lg ts-scroll mr-4"
                             data-animate="ts-fadeInUp" data-delay=".2s">

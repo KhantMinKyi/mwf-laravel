@@ -8,8 +8,7 @@
                         </div>
                         <!--end ts-title-->
                         <p>
-                            Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque.
-                            Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.
+                            {{ __('home.our_history_start_line') }}
                         </p>
                         <div class="list-group list-group-flush mb-5">
                             <a href="#collapseOne"
@@ -18,10 +17,7 @@
                                 aria-controls="collapseOne">{{ __('home.our_mission') }}</a>
                             <div class="collapse" id="collapseOne">
                                 <p class="pt-3 small">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad
-                                    squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                    sapiente ea proident.
+                                    {{ __('about_us.our_mission_detail') }}
                                 </p>
                             </div>
                             <a href="#collapseTwo"
@@ -30,10 +26,7 @@
                                 aria-controls="collapseTwo">{{ __('home.our_vision') }}</a>
                             <div class="collapse" id="collapseTwo">
                                 <p class="pt-3 small">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad
-                                    squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                    sapiente ea proident.
+                                    {{ __('about_us.our_vision_detail') }}
                                 </p>
                             </div>
                             <a href="#collapseThree"
@@ -42,10 +35,7 @@
                                 aria-controls="collapseThree">{{ __('home.our_philosophy') }}</a>
                             <div class="collapse" id="collapseThree">
                                 <p class="pt-3 small">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad
-                                    squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                    sapiente ea proident.
+                                    {{ __('about_us.our_philosophy_detail') }}
                                 </p>
                             </div>
                         </div>

@@ -7,9 +7,10 @@ return [
     From 2011 to the present, during a period of five years, the sport of wrestling has participated in international competitions. In 2015, a major Asian wrestling competition was successfully organized at Wunna Theikdi Stadium Office (5) in Nay Pyi Taw. The Myanmar Wrestling Federation is continuing to plan and work towards producing new generations of wrestlers in the future.
     ',
     
-'our_vision_detail'                    => 'ကျွန်ုပ်တို့၏အမြင်',
-'our_mission_detail'                   => 'ကျွန်ုပ်တို့၏မစ်ရှင်',
-'our_philosophy_detail'                => 'ကျွန်ုပ်တို့၏ဒဿန',
+'our_vision_detail'                    => 'To establish Myanmar as a dominant force in international wrestling, producing world-class athletes who embody discipline and national pride, and to make wrestling a cherished and widely practiced sport throughout the nation.',
+'our_mission_detail'                   => 'To identify, nurture, and develop talented wrestlers from all regions of Myanmar through structured and scientific training programs.To provide state-of-the-art facilities and world-class coaching to elevate the skills and performance of our athletes.To promote the sport at the grassroots level, fostering a new generation of wrestlers and enthusiasts.To uphold the highest standards of sportsmanship, integrity, and fair play in all competitions and activities.To create opportunities for our wrestlers to compete and succeed at national, regional, and international levels.
+',
+'our_philosophy_detail'                => 'We believe that wrestling is more than a contest of strength; it is a discipline that forges character, resilience, and respect. On the mat, we learn humility in victory and perseverance in defeat. We are committed to developing not just champions, but also outstanding individuals who will contribute positively to their communities and honorably represent the spirit of Myanmar.',
 
 
     'activity_title' =>'Activities of the Myanmar Wrestling Federation'
