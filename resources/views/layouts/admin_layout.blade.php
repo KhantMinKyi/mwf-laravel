@@ -26,11 +26,11 @@
     <!-- App css  (Mandatory in All Pages) -->
     <link href="{{ asset('admin/css/app.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="icon" href="{{ asset('img/mwf_logo.png') }}" type="image/png">
-    @if (app()->environment('local'))
+    {{-- @if (app()->environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @else
+        @else --}}
         <script src="https://cdn.tailwindcss.com"></script>
-    @endif
+    {{-- @endif --}}
     
 </head>
 
