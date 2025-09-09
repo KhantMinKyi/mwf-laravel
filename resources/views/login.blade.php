@@ -45,12 +45,7 @@
                                 style="background-color: #12264f">
                                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                                     <h4 class="mb-4">{{ __('layout.website_name') }}</h4>
-                                    <p class="small mb-0 text-success">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit, sed do
-                                        eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p class="small mb-0 text-success">{{ __('home.our_history_start_line') }}</p>
                                 </div>
                             </div>
                         </div>

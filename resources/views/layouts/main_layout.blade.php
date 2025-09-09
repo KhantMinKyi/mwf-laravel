@@ -176,20 +176,17 @@
                                 <h3>{{ __('layout.contact_us') }}</h3>
                                 <address>
                                     <figure>
-                                        2590 Rocky Road
-                                        Philadelphia, PA 19108
+---
                                     </figure>
                                     <br>
                                     <figure>
                                         <div class="font-weight-bold">{{ __('layout.email') }}</div>
-                                        <a href="#">office@example.com</a>
+                                        <a href="#">contact@mwfmyanmar.org</a>
                                     </figure>
                                     <figure>
                                         <div class="font-weight-bold">{{ __('layout.phone') }}</div>
                                         +1 215-606-0391
                                     </figure>
-                                    <div class="font-weight-bold">{{ __('layout.facebook') }}:</div>
-                                    fin.win
                                 </address>
                                 <!--end address-->
                             </div>
