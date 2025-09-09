@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Committee;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,8 @@ class HomeController extends Controller
     }
     public function getCommitteePage()
     {
-        return view('guest.committee');
+        $committees = Committee::orderBy('created_at','desc')->paginate(8);
+        return view('guest.committee',compact('committees'));
     }
     public function getNewsDetailPage($id)
     {

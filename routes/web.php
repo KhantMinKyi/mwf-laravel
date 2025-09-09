@@ -13,6 +13,7 @@ Route::group(['middleware' => ['auth', IsAdmin::class], 'prefix' => '/administra
         return view('admin.dashboard');
     })->name('admin.dashboard');
     include __DIR__ . '/route_group/admin/posts.php';
+    include __DIR__ . '/route_group/admin/committees.php';
 });
 
 

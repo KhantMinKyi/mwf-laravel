@@ -69,7 +69,7 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="charts-apex.html"
+                            <a href="{{ route('admin.committees.index') }}"
                                 class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">
                                 <i class="i-tabler-photo text-2xl"></i>
                                 <span class="menu-text"> Committees </span>
