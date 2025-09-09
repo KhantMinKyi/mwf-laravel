@@ -5,7 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="ThemeStarz">
+<!-- SEO Meta Description -->
+    <meta name="description" content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
 
+    <!-- Keywords -->
+    <meta name="keywords" content="Myanmar Wrestling Federation, MWF, FILA, Wrestling Myanmar, Wrestling Federation, Swift and Clever, Strength of Wrestler">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Myanmar Wrestling Federation | Swift and Clever, Strength of Wrestler">
+    <meta property="og:description" content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('images/mwf-logo.png') }}"> <!-- Replace with your logo/image path -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Myanmar Wrestling Federation | Swift and Clever, Strength of Wrestler">
+    <meta name="twitter:description" content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
+    <meta name="twitter:image" content="{{ asset('images/mwf-logo.png') }}"> <!-- Replace with your logo/image path -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('img/mwf_logo.png') }}" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
     <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('assets/font-awesome/css/fontawesome-all.min.css') }}">
