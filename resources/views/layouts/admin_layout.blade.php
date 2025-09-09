@@ -40,7 +40,7 @@
                 <!-- Sidenav Logo -->
                 <div class="sticky top-0 flex h-topbar items-center justify-between px-6">
                     <a href="{{ route('admin.dashboard') }}">
-                        <img src="{{ asset('admin/images/logo-light.png') }}" alt="logo" class="flex h-8">
+                        <img src="{{ asset('/img/mwf_logo.png') }}" alt="logo" class="flex h-12">
                     </a>
                 </div>
 
