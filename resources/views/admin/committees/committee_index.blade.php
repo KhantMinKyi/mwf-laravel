@@ -112,8 +112,12 @@
                                 <td class="items px-6 py-4">
                                     <a href="{{ route('admin.committees.edit', $committee->id) }}"
                                         class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    <a href="{{ route('admin.committees.archived_committee', $committee->id) }}?status=0"
-                                        class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
+                                        <form action="{{ route('admin.committees.destroy', $committee->id) }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit"
+                                                class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</button>
+                                            </form>
                                 </td>
                             </tr>
                         @endforeach
