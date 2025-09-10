@@ -18,15 +18,15 @@
                 </figure>
                 <!--end date-->
             </li> --}}
-
+@foreach($achements as $achement)
             <li class="ts-time-line__item">
                 <div class="ts-box">
-                    <h5>The 26th Southeast Asian Games</h5>
-                    <span>Venue: Palembang, Indonesia</span>
-                    <span>Date: (11.11.2011 to 18.11.2011)</span>
+                    <h5>{{ $achement->{'achement_title' . $naming} }}</h5>
+                    <span>Venue: {{ $achement->{'achement_location' . $naming} }}</span>
+                    <span>Date: ({{$achement->achement_start_date}} to {{$achement->achement_end_date}})</span>
                     {{-- <p> --}}
                         <h6>
-                            Zaw Moe Aung - 84 kg, Bronze Medal / Zaw Min Aung - 60 kg, Bronze Medal
+                            {{ $achement->{'achement_description' . $naming} }}
                         </h6>
 
                     {{-- </p> --}}
@@ -35,11 +35,11 @@
                 <!--end ts-box-->
                 <figure>
                     <small>Activities</small>
-                    <h6>2011 </h6>
+                    <h6>{{ $achement->{'achement_year' . $naming} }} </h6>
                 </figure>
                 <!--end date-->
             </li>
-
+@endforeach
             <li class="ts-time-line__item">
                 <div class="ts-box">
                     <h5>Funding campaign launched</h5>

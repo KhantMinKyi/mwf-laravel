@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Achement;
 use App\Models\Committee;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -11,7 +12,8 @@ class HomeController extends Controller
 {
     public function getAboutUsPage()
     {
-        return view('guest.about_us');
+                $achements = Achement::orderBy('achement_year','desc')->get();
+        return view('guest.about_us',compact('achements'));
     }
     public function getNewsPage()
     {

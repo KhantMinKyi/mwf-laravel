@@ -4,6 +4,10 @@
     <h1>{{ __('home.about_us') }}</h1>
 @endsection
 @section('content')
+@php
+    $locale = app()->getLocale();
+    $naming = $locale == 'en' ? '' : '_mm';
+@endphp
     <div class="container ">
         <div class="row">
             <div class="col-sm-6">

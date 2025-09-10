@@ -14,6 +14,7 @@ Route::group(['middleware' => ['auth', IsAdmin::class], 'prefix' => '/administra
     })->name('admin.dashboard');
     include __DIR__ . '/route_group/admin/posts.php';
     include __DIR__ . '/route_group/admin/committees.php';
+    include __DIR__ . '/route_group/admin/achements.php';
 });
 
 
