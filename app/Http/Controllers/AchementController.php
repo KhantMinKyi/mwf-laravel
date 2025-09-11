@@ -66,7 +66,13 @@ class AchementController extends Controller
      */
     public function edit(string $id)
     {
-        //
+                $achement = Achement::find($id);
+
+        if($achement){
+            return view('partial_view.admin.achements.achement_edit',compact('achement'));
+        }else{
+            return response()->json(['message'=>'Error! No achement Found']);
+        }
     }
 
     /**
@@ -74,7 +80,26 @@ class AchementController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+               // dd($request->all());
+            $data = $request->validate([
+            'achement_title'                => 'required',
+            'achement_title_mm'             => 'required',
+            'achement_description'          => 'required',
+            'achement_description_mm'       => 'required',
+            'achement_location'             => 'required',
+            'achement_location_mm'          => 'required',
+            'achement_year'                 => 'required',
+            'achement_year_mm'              => 'required',
+            'achement_start_date'           => 'required',
+            'achement_end_date'             => 'required',
+        ]);
+         $achement = Achement::find($id);
+        // dd($request->all());
+        $user_id = Auth::user()->id;
+        $data['achement_created_user_id'] = $user_id;
+        $data['achement_updated_user_id'] = $user_id;
+       $achement->update($data);
+        return to_route('admin.achements.index')->with('success', 'Achement Updated Successfully!');
     }
 
     /**
@@ -82,6 +107,13 @@ class AchementController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $achement = Achement::find($id);
+        
+        if($achement){
+            $achement->delete();
+        return to_route('admin.achements.index')->with('success', 'Achement Deleted Successfully!');
+        }else{
+            return response()->json(['message'=>'Error! No achement Found']);
+        }
     }
 }
