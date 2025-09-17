@@ -28,4 +28,5 @@ return [
     'your_email'        => 'Your Email',
     'your_message'      => 'Your Message',
     'contact_form'      => 'Contact Form',
+    'address'           => 'Kyaik Ka San  Stadium, Myanmar Wrestling Federation Office, Tamwe Township',
 ];

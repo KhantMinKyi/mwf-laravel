@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="ThemeStarz">
-<!-- SEO Meta Description -->
-    <meta name="description" content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
+    <!-- SEO Meta Description -->
+    <meta name="description"
+        content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
 
     <!-- Keywords -->
-    <meta name="keywords" content="Myanmar Wrestling Federation, MWF, FILA, Wrestling Myanmar, Wrestling Federation, Swift and Clever, Strength of Wrestler">
+    <meta name="keywords"
+        content="Myanmar Wrestling Federation, MWF, FILA, Wrestling Myanmar, Wrestling Federation, Swift and Clever, Strength of Wrestler">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Myanmar Wrestling Federation | Swift and Clever, Strength of Wrestler">
-    <meta property="og:description" content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
+    <meta property="og:description"
+        content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset('images/mwf-logo.png') }}"> <!-- Replace with your logo/image path -->
@@ -24,7 +27,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Myanmar Wrestling Federation | Swift and Clever, Strength of Wrestler">
-    <meta name="twitter:description" content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
+    <meta name="twitter:description"
+        content="The Myanmar Wrestling Federation (MWF) was registered with the International Wrestling Federation (FILA) in 2008 and officially recognized in 2010. Our motto: Swift and Clever, Strength of Wrestler.">
     <meta name="twitter:image" content="{{ asset('images/mwf-logo.png') }}"> <!-- Replace with your logo/image path -->
 
     <!-- Favicon -->
@@ -200,16 +204,16 @@
                                 <h3>{{ __('layout.contact_us') }}</h3>
                                 <address>
                                     <figure>
----
+                                        {{ __('layout.address') }}
                                     </figure>
                                     <br>
                                     <figure>
                                         <div class="font-weight-bold">{{ __('layout.email') }}</div>
-                                        <a href="#">contact@mwfmyanmar.org</a>
+                                        <a href="#">contact@mmwrestlingfed.org</a>
                                     </figure>
                                     <figure>
                                         <div class="font-weight-bold">{{ __('layout.phone') }}</div>
-                                        +1 215-606-0391
+                                        09-262529438
                                     </figure>
                                 </address>
                                 <!--end address-->
