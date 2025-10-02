@@ -123,7 +123,7 @@
 
             <div class="container align-self-center align-items-center">
                 <div class="row align-items-center">
-                    <div class="col-sm-7 col-md-7 d-none d-sm-block">
+                    <div class="col-sm-7 col-md-7 d-block">
                         <h1 data-animate="ts-fadeInUp">
 
                             @yield('banner_title')
@@ -138,7 +138,7 @@
                             <i class="fa fa-arrow-right small ml-3 ts-opacity__50"></i>
                         </a>
                     </div>
-                    <div class="col-sm-5 offset-lg-1 col-md-4">
+                    <div class="col-sm-5 offset-lg-1 col-md-4 d-none d-sm-block">
                         <form class="ts-form p-4 ts-border-radius__md text-white" data-php-path="assets/php/email.php"
                             data-bg-color="rgba(255,255,255,.2)" data-animate="ts-fadeInUp" data-delay=".2s">
                             <h3>{{ __('layout.contact_us') }}</h3>

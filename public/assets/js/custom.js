@@ -378,9 +378,9 @@ function doneResizing(){
 
 // Set Hero height
 
-function heroHeight(){
-    $(".ts-full-screen").height( $(window).height() );
-}
+// function heroHeight(){
+//     $(".ts-full-screen").height( $(window).height() );
+// }
 
 // Smooth Scroll
 

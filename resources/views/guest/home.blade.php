@@ -48,36 +48,4 @@
     @include('components.team_members')
     <!--END TEAM MEMBERS **********************************************************************************-->
 @endsection
-<script>
-    $(document).ready(function() {
-
-        $('#owl-demo').owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 6000,
-            autoplayHoverPause: true,
-            nav: true,
-            dots: true,
-            navText: ['‹', '›'],
-            smartSpeed: 700,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-
-        // Force caption animation on first slide (in case of initial active state)
-        setTimeout(function() {
-            $('#owl-demo .owl-item.active .carousel-caption').css('opacity', '1');
-        }, 50);
-
-    });
-</script>
+<script></script>
