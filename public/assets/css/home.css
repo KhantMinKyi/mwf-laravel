@@ -1,0 +1,163 @@
+    :root {
+        --caption-bg: rgba(6, 12, 34, 0.56);
+        --accent: #f0c54b;
+        /* accent stripe color */
+        --white: #ffffff;
+    }
+.owl-carousel .owl-stage, .owl-carousel .owl-stage-outer, .owl-carousel .owl-item {
+    height: auto !important;
+}
+    /* make the item relative so caption sits above the image */
+    #owl-demo .item {
+        position: relative;
+        overflow: hidden;
+        min-height: 420px;
+        /* fallback height */
+    }
+
+    /* full-bleed responsive images */
+    #owl-demo .item img {
+        width: 100%;
+        height: 560px;
+        /* desktop height */
+        object-fit: cover;
+        display: block;
+        vertical-align: middle;
+        filter: saturate(1.02) contrast(1.02);
+    }
+
+    /* Caption panel — left side, glass + gradient */
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 6%;
+        transform: translateY(-50%) translateX(-24px);
+        /* starting offset for animation */
+        max-width: 44%;
+        padding: 26px 28px;
+        border-radius: 12px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)), var(--caption-bg);
+        box-shadow: 0 14px 40px rgba(5, 10, 25, 0.45);
+        color: var(--white);
+        backdrop-filter: blur(6px);
+        /* nice glass effect on supported browsers */
+        opacity: 0;
+        transition: transform 700ms cubic-bezier(.2, .9, .2, 1), opacity 700ms ease;
+        z-index: 5;
+    }
+
+    /* small accent stripe on the left edge */
+    .carousel-caption::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 12px;
+        bottom: 12px;
+        width: 6px;
+        border-radius: 6px;
+        background: linear-gradient(180deg, var(--accent), rgba(240, 197, 75, 0.75));
+        transform: translateX(-100%);
+        transition: transform 700ms cubic-bezier(.2, .9, .2, 1);
+    }
+
+    /* Title (left-aligned) */
+    .caption-title {
+        margin: 0 0 10px 6px;
+        /* left padding to not overlap stripe */
+        font-size: 34px;
+        line-height: 1.05;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--white);
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Body text */
+    .caption-body {
+        margin: 0 0 16px 6px;
+        /* left padding slightly to match title */
+        font-size: 15.5px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.92);
+        max-height: 220px;
+        overflow: hidden;
+    }
+
+    /* CTA button */
+    .caption-cta {
+        display: inline-block;
+        margin-left: 6px;
+        padding: 10px 16px;
+        border-radius: 8px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: var(--white);
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 160ms ease, background 200ms ease, box-shadow 200ms ease;
+    }
+
+    .caption-cta:hover {
+        transform: translateY(-3px);
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 8px 26px rgba(3, 6, 20, 0.45);
+    }
+
+    /* When Owl marks the slide active, animate caption to visible and slide in */
+    .owl-item.active .carousel-caption {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }
+
+    .owl-item.active .carousel-caption::before {
+        transform: translateX(0);
+    }
+
+    /* small screens: caption becomes bottom full-width for readability */
+    @media (max-width: 992px) {
+        #owl-demo .item img {
+            height: 480px;
+        }
+
+        .carousel-caption {
+            top: auto;
+            bottom: 8%;
+            left: 5%;
+            right: 5%;
+            transform: translateY(0) translateX(0);
+            max-width: 90%;
+            padding: 18px;
+        }
+
+        .caption-title {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .caption-body {
+            font-size: 15px;
+            max-height: 160px;
+        }
+    }
+
+    /* extra small devices */
+    @media (max-width: 520px) {
+        #owl-demo .item img {
+            height: 500px;
+        }
+
+        .caption-title {
+            font-size: 22px;
+        }
+
+        .caption-body {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .carousel-caption::before {
+            display: none;
+        }
+.
+        /* hide stripe on very small screens */
+    }
